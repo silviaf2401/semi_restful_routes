@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <h1> Product Number {{product[0]['id']}} </h1>
+    <form action='/products/update/{{product[0]['id']}}' method='post'>
+      <div><label>Name</label><input id='len' type='text' name='name' value='{{product[0]['name']}}'></div>
+      <div><label>Description</label><input id='len' type='text' name='description' value='{{product[0]['description']}}'></div>
+      <div><label>Price</label><input id='len' type='text' name='price' value='{{product[0]['price']}}' ></div>
+      <input id ='button' type='submit' value='UPDATE'>
+    </form> 
+    <br>
+  <a id='edit' href='/products'>Back</a>
+
+
+  </body>

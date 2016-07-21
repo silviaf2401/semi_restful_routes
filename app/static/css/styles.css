@@ -1,0 +1,63 @@
+* {
+  font-family: Arial;
+}
+
+td { width: 400px;
+	text-align: center;
+	border: 1px solid black;
+}
+#del { 
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+#actions {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#add {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+label{ margin-right: 10px;
+	}
+
+div { margin-bottom: 10px;
+
+}
+
+#len { width: 300px;
+	height: 20px;
+	font-size: 12px;
+}
+
+#button {
+	margin-top: 10px;
+	color: white;
+	background-color: orange;
+	width: 150px;
+	height: 35px;
+	border: 1px solid orange;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+
+#edit { 
+padding-top: 20px;}
+
+#del {
+	margin-top: 10px;
+	color: white;
+	background-color: red;
+	width: 80px;
+	height: 35px;
+	border: 1px solid red;
+	border-radius: 8px;
+	font-size: 16px;
+}
+
+}

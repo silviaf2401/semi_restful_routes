@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <table>
+    	<tr>
+    		<td> Name </td>
+    		<td> Description </td>
+    		<td> Price </td>
+    		<td> Actions </td>
+    	</tr>	
+    	 {% for element in product_table%}
+    	 <tr>
+    		<td> {{element['name']}} </td>
+    		<td> {{element['description']}} </td>
+    		<td> {{element['price']}} </td>
+    		<td><a id='actions' href ='/products/show/{{element['id']}}'>Show</a>
+    			<a id='actions' href='/products/edit/{{element['id']}}'>Edit</a>
+    			<form action='/products/destroy/{{element['id']}}' method="POST">
+    			<input id='del' type = 'submit' value='REMOVE'>
+    			</form>
+    		</td>
+    		{%endfor%}	
+    	<tr>
+    	</table>
+
+    	<a id='add' href='/products/new'>Add a new product</a>
+  </body>
+</html>
